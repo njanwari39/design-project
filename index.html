@@ -28,6 +28,11 @@
             <a href="contact.html" class="btn">Pre-Order Today</a>
         </section>
 
+        <!-- Interactive Storage Status Display -->
+        <section class="preference-tracker" style="text-align: center; margin-bottom: 2rem;">
+            <p id="favorite-status" style="font-weight: bold; color: var(--brown);">Saved Preference: None selected yet</p>
+        </section>
+
         <section class="featured-products">
             <h2>Our Specialties</h2>
             <div class="product-grid">
@@ -35,11 +40,13 @@
                     <img src="images/bakery-signature-loaf_c.jpg" alt="Fresh artisan sourdough loaf">
                     <h3>Signature Sourdough</h3>
                     <p>Naturally fermented with a crisp crust and tender crumb.</p>
+                    <button class="btn favorite-btn" data-item="sourdough">Save as Favorite</button>
                 </div>
                 <div class="card">
                     <img src="images/bakery-bread_c.jpg" alt="Assorted freshly baked breads">
                     <h3>Morning Pastries & Breads</h3>
                     <p>Baked fresh daily using regional ingredients.</p>
+                    <button class="btn favorite-btn" data-item="pastries">Save as Favorite</button>
                 </div>
             </div>
         </section>
@@ -48,5 +55,7 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>

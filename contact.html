@@ -23,14 +23,17 @@
 
     <main>
         <h1>Place a Pre-Order</h1>
-        <form>
+        <form id="preorder-form" novalidate>
             <fieldset>
                 <legend>Customer Information</legend>
+                
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
+                <span id="name-error" class="error-text" style="color: #b33939; font-size: 0.85rem; display: block; margin-top: 0.25rem;"></span>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
+                <span id="email-error" class="error-text" style="color: #b33939; font-size: 0.85rem; display: block; margin-top: 0.25rem;"></span>
             </fieldset>
 
             <fieldset>
@@ -49,10 +52,10 @@
             <button type="submit" class="btn">Submit Order</button>
         </form>
 
-        <section class="audio-section">
+        <section class="audio-section" style="margin-top: 2rem;">
             <h2>Welcome Message</h2>
             <audio controls>
-                <source src="bakery-welcome_c.mp3" type="audio/mpeg">
+                <source src="images/bakery-welcome_c.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </section>
@@ -61,5 +64,7 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>
