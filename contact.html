@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Pre-Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/bakery-logo_c.png" alt="North Star Bakery Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Pre-Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Place a Pre-Order</h1>
+        <form>
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Details</legend>
+                <label for="item">Select Item:</label>
+                <select id="item" name="item">
+                    <option value="sourdough">Signature Sourdough</option>
+                    <option value="cookies">Artisan Cookies</option>
+                    <option value="pastries">Morning Bakes</option>
+                </select>
+
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+
+        <section class="audio-section">
+            <h2>Welcome Message</h2>
+            <audio controls>
+                <source src="bakery-welcome_c.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
